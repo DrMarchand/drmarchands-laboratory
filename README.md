@@ -1,47 +1,30 @@
-<div align="center">
+Yep. I over-dressed it with HTML/table tricks, and GitHub Markdown can get fussy fast. Let’s keep it clean, native, and copy-safe.
+
+Here’s a version built for plain GitHub-flavored Markdown only:
+
 # 🔬 DrMarchand’s Lab⚛︎ratory™
-### *Engineering Milestones*
-`Authority: © Design Orchard LLC` • `Engine: ⚙︎ Nɛuro-Forge Engine™` • `Archive: 📚 DrMarchand’s ⚛︎ Library™`
+## Engineering Milestones
+**Authority:** © Design Orchard LLC  
+**Engine:** ⚙︎ Nɛuro-Forge Engine™  
+**Archive:** 📚 DrMarchand’s ⚛︎ Library™
 ---
-*This document records practical system progress.*
-*Its purpose is to show what has been defined, what has been built, and what appears to work.*
-</div>
-<br>
-## Overview
 > [!NOTE]
-> This project has moved from concept exploration into working system design and implementation.
-> The value here is not in claiming perfection.
-> It is in documenting the current structure, logic, and implementation path.
+> This document records practical system progress.
+> Its purpose is to show what has been defined, what has been built, and what appears to work.
+---
+## Overview
+This project has moved from concept exploration into working system design and implementation.
+The value here is not in claiming perfection.  
+It is in documenting the current structure, logic, and implementation path.
 ---
 ## 1. Core System Architecture Defined
 A major milestone was establishing a stable system structure with named layers and clearer boundaries.
-<table>
-<tr>
-<td><strong>State</strong></td>
-<td><strong>Layer</strong></td>
-<td><strong>Role</strong></td>
-</tr>
-<tr>
-<td><code>0</code></td>
-<td>Design Orchard LLC / Orchard</td>
-<td>Authority and business layer</td>
-</tr>
-<tr>
-<td><code>8</code></td>
-<td>🔬 DrMarchand’s Lab⚛︎ratory™</td>
-<td>Active internal environment</td>
-</tr>
-<tr>
-<td><code>32</code></td>
-<td>📚 DrMarchand’s ⚛︎ Library™</td>
-<td>Archive and memory surface</td>
-</tr>
-<tr>
-<td><code>48</code></td>
-<td>⚙︎ Nɛuro-Forge Engine™</td>
-<td>Execution and control logic</td>
-</tr>
-</table>
+| State | Layer | Role |
+|:--|:--|:--|
+| `0` | Design Orchard LLC / Orchard | Authority and business layer |
+| `8` | 🔬 DrMarchand’s Lab⚛︎ratory™ | Active internal environment |
+| `32` | 📚 DrMarchand’s ⚛︎ Library™ | Archive and memory surface |
+| `48` | ⚙︎ Nɛuro-Forge Engine™ | Execution and control logic |
 Additional structure established:
 - **∞ OS™** split into an internal kernel and a public interface
 - **Lionheart** identified as the current active alpha version
@@ -230,32 +213,12 @@ They still represent real progress in the project’s supporting infrastructure.
 
 Highest-Value Milestones
 
-<table>
-<tr>
-<td><strong>Milestone</strong></td>
-<td><strong>Summary</strong></td>
-</tr>
-<tr>
-<td><strong>A. System architecture defined</strong></td>
-<td>Orchard / Lab / Library / Nɛuro-Forge / ∞ OS™ hierarchy established.</td>
-</tr>
-<tr>
-<td><strong>B. Archive and seal logic defined</strong></td>
-<td>Canonical archive and validation model established.</td>
-</tr>
-<tr>
-<td><strong>C. Apps Script backend drafted</strong></td>
-<td><code>doGet</code>, <code>getBooks</code>, and <code>getShelfTags</code> created as backend logic.</td>
-</tr>
-<tr>
-<td><strong>D. Engine frontend built</strong></td>
-<td>Search, tags, tabs, cards, theme logic, and deployable UI behavior implemented.</td>
-</tr>
-<tr>
-<td><strong>E. Sheet schema and deployment path defined</strong></td>
-<td>A structured data model now feeds the interface.</td>
-</tr>
-</table>
+Milestone	Summary
+A. System architecture defined	Orchard / Lab / Library / Nɛuro-Forge / ∞ OS™ hierarchy established.
+B. Archive and seal logic defined	Canonical archive and validation model established.
+C. Apps Script backend drafted	doGet, getBooks, and getShelfTags created as backend logic.
+D. Engine frontend built	Search, tags, tabs, cards, theme logic, and deployable UI behavior implemented.
+E. Sheet schema and deployment path defined	A structured data model now feeds the interface.
 
 ⸻
 
