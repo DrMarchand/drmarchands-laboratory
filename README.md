@@ -1,7 +1,3 @@
-Yep. I over-dressed it with HTML/table tricks, and GitHub Markdown can get fussy fast. Let’s keep it clean, native, and copy-safe.
-
-Here’s a version built for plain GitHub-flavored Markdown only:
-
 # 🔬 DrMarchand’s Lab⚛︎ratory™
 ## Engineering Milestones
 **Authority:** © Design Orchard LLC  
