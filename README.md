@@ -2,6 +2,7 @@
 ## Engineering Milestones
 
 **Authority:** © Design Orchard LLC  
+**Owner:** Joseph Kyle Marchand  
 **Engine:** ⚙︎ Nɛuro-Forge Engine™  
 **Archive:** 📚 DrMarchand’s ⚛︎ Library™
 
