@@ -1,234 +1,271 @@
 # 🔬 DrMarchand’s Lab⚛︎ratory™
 ## Engineering Milestones
+
 **Authority:** © Design Orchard LLC  
 **Engine:** ⚙︎ Nɛuro-Forge Engine™  
 **Archive:** 📚 DrMarchand’s ⚛︎ Library™
+
 ---
+
 > [!NOTE]
 > This document records practical system progress.
 > Its purpose is to show what has been defined, what has been built, and what appears to work.
+
 ---
+
 ## Overview
+
 This project has moved from concept exploration into working system design and implementation.
+
 The value here is not in claiming perfection.  
 It is in documenting the current structure, logic, and implementation path.
+
 ---
+
 ## 1. Core System Architecture Defined
+
 A major milestone was establishing a stable system structure with named layers and clearer boundaries.
+
 | State | Layer | Role |
 |:--|:--|:--|
 | `0` | Design Orchard LLC / Orchard | Authority and business layer |
 | `8` | 🔬 DrMarchand’s Lab⚛︎ratory™ | Active internal environment |
 | `32` | 📚 DrMarchand’s ⚛︎ Library™ | Archive and memory surface |
 | `48` | ⚙︎ Nɛuro-Forge Engine™ | Execution and control logic |
+
 Additional structure established:
 - **∞ OS™** split into an internal kernel and a public interface
 - **Lionheart** identified as the current active alpha version
+
 > [!TIP]
 > This matters because implementation becomes easier when names, ownership, and layer boundaries remain stable.
+
 ---
+
 ## 2. Engine Processing Model Established
+
 The project now contains a defined processing model, not only naming or visual identity work.
+
 ### Defined model
+
 ```txt
 input: x ∈ R
 process: T(x)
+
 paths:
 - Constant
 - Root
 - Radical
+
 convergence targets:
 - 64
 - 786
+```
 
-In practical terms, this is an early algorithmic framework.
+In practical terms, this is an early algorithmic framework.  
 Some parts are still conceptual, but it is structured enough to inform future code for routing, state handling, scoring, derivation, and validation.
 
-Why it matters: provides a consistent logic model for future implementation.
+**Why it matters:** provides a consistent logic model for future implementation.
 
-⸻
+---
 
-3. Archive and Verification Layer Defined
+## 3. Archive and Verification Layer Defined
 
-The project established an archive and verification model through MARC.
+The project established an archive and verification model through **MARC**.
 
-Defined rules
+### Defined rules
 
+```txt
 MARC = archive layer
 786  = sealed / immutable condition
 rule = only sealed assets enter the archive
+```
 
 This introduces the basis for:
+- provenance
+- version legitimacy
+- release gating
+- artifact validation
 
-* provenance
-* version legitimacy
-* release gating
-* artifact validation
+> [!IMPORTANT]
+> Many projects produce outputs without defining what counts as canonical.
+> This project now has an early answer to that problem.
 
-[!IMPORTANT]
-Many projects produce outputs without defining what counts as canonical.
-This project now has an early answer to that problem.
+---
 
-⸻
-
-4. Apps Script Backend Drafted for the Library / Engine
+## 4. Apps Script Backend Drafted for the Library / Engine
 
 This is one of the clearest examples of concrete coding progress.
 
-Implemented backend elements
+### Implemented backend elements
 
+```javascript
 doGet()
 getBooks(shelf)
 getShelfTags(shelf)
+```
 
 Additional backend work includes:
+- Google Sheet tab mapping for content retrieval
+- row parsing into structured card objects
 
-* Google Sheet tab mapping for content retrieval
-* row parsing into structured card objects
-
-This means the project is no longer just storing information in a spreadsheet.
+This means the project is no longer just storing information in a spreadsheet.  
 It now has a working backend pattern for retrieving and structuring content.
 
-Why it matters: moves the project from passive storage toward functional application logic.
+**Why it matters:** moves the project from passive storage toward functional application logic.
 
-⸻
+---
 
-5. Working Web UI Designed for the Engine
+## 5. Working Web UI Designed for the Engine
 
 The Nɛuro-Forge Engine page includes real interface behavior, not only visual layout.
 
-Implemented interface features
+### Implemented interface features
 
-* searchable card grid
-* shelf switching between Engine and Protocols
-* tag-chip filters
-* sticky sidebar navigation
-* theme toggle
-* frontend bridge calls to Apps Script
+- searchable card grid
+- shelf switching between Engine and Protocols
+- tag-chip filters
+- sticky sidebar navigation
+- theme toggle
+- frontend bridge calls to Apps Script
 
+```txt
 Sheets → Apps Script → UI → deployable web app
+```
 
 This marks the point where the project moved from planning into interactive system behavior.
 
-Why it matters: creates a usable interface layer for browsing and interacting with system content.
+**Why it matters:** creates a usable interface layer for browsing and interacting with system content.
 
-⸻
+---
 
-6. Sheet Schema Defined
+## 6. Sheet Schema Defined
 
 The Engine page now depends on a concrete and repeatable schema.
 
-Defined schema
+### Defined schema
 
+```txt
 shelf | title | icon | path | blurb | tags
+```
 
-Defined structure
+### Defined structure
 
-* required Engine tab
-* optional Protocols tab
-* deploy path as a Web App
+- required **Engine** tab
+- optional **Protocols** tab
+- deploy path as a Web App
 
-[!TIP]
-Schema design makes automation, ingestion, filtering, and future API expansion much easier.
+> [!TIP]
+> Schema design makes automation, ingestion, filtering, and future API expansion much easier.
 
-⸻
+---
 
-7. Library Expanded into a Multi-Surface System
+## 7. Library Expanded into a Multi-Surface System
 
 The Library has developed beyond a single-page idea into a broader multi-surface structure.
 
-Supported surfaces
+### Supported surfaces
 
-* engine
-* protocols
-* workbench
-* optional WorkbenchIndex
-* embedded sheet URLs for read-only and editor modes
+- engine
+- protocols
+- workbench
+- optional `WorkbenchIndex`
+- embedded sheet URLs for read-only and editor modes
 
 This shows the project is being developed as a connected environment rather than a single isolated page.
 
-Why it matters: separates browsing, execution, and workbench operations into clearer functional surfaces.
+**Why it matters:** separates browsing, execution, and workbench operations into clearer functional surfaces.
 
-⸻
+---
 
-8. Licensing and Provenance Pattern Established
+## 8. Licensing and Provenance Pattern Established
 
 The Engine UI includes structured artifact metadata.
 
-Defined metadata fields
+### Defined metadata fields
 
+```txt
 license
 protocol name
 hash
 owner
 timestamp
 storage path for seals
+```
 
-This is the beginning of a manifest system.
+This is the beginning of a manifest system.  
 When connected to file generation or deployment scripts, it can support a more complete artifact registry.
 
-Why it matters: prepares the system for traceable outputs and clearer ownership flow.
+**Why it matters:** prepares the system for traceable outputs and clearer ownership flow.
 
-⸻
+---
 
-9. Repeatability Established as a Design Principle
+## 9. Repeatability Established as a Design Principle
 
 The project is framed around repeatable behavior rather than one-off ideation.
 
+```txt
 inputs are constrained
 structure emerges
 outcomes stabilize
 system remains testable and revisable
+```
 
-Lionheart is identified as alpha.
+**Lionheart** is identified as alpha.  
 The system is treated as testable, revisable, and capable of iteration.
 
-[!NOTE]
-Repeatability is one of the clearest indicators that a project is moving from concept exploration into system design.
+> [!NOTE]
+> Repeatability is one of the clearest indicators that a project is moving from concept exploration into system design.
 
-⸻
+---
 
-10. Supporting Systems Work Advanced Across the Project
+## 10. Supporting Systems Work Advanced Across the Project
 
 There has also been meaningful systems progress across related project threads.
 
-Advanced areas
+### Advanced areas
 
-* ∞ OS™ folder and root structure
-* deployable system blueprint
-* Orchard database thinking
-* Partner CRM schema
-* Alpha / Beta / Theta / Delta state-machine translation
-* terminal and shell identity work around the Nɛuro-Forge environment
+- ∞ OS™ folder and root structure
+- deployable system blueprint
+- Orchard database thinking
+- Partner CRM schema
+- Alpha / Beta / Theta / Delta state-machine translation
+- terminal and shell identity work around the Nɛuro-Forge environment
 
-These vary in maturity.
-Some are still blueprint-level, some are shell-level implementation, and some are schema design.
+These vary in maturity.  
+Some are still blueprint-level, some are shell-level implementation, and some are schema design.  
 They still represent real progress in the project’s supporting infrastructure.
 
-⸻
+---
 
-Highest-Value Milestones
+## Highest-Value Milestones
 
-Milestone	Summary
-A. System architecture defined	Orchard / Lab / Library / Nɛuro-Forge / ∞ OS™ hierarchy established.
-B. Archive and seal logic defined	Canonical archive and validation model established.
-C. Apps Script backend drafted	doGet, getBooks, and getShelfTags created as backend logic.
-D. Engine frontend built	Search, tags, tabs, cards, theme logic, and deployable UI behavior implemented.
-E. Sheet schema and deployment path defined	A structured data model now feeds the interface.
+| Milestone | Summary |
+|:--|:--|
+| **A. System architecture defined** | Orchard / Lab / Library / Nɛuro-Forge / ∞ OS™ hierarchy established. |
+| **B. Archive and seal logic defined** | Canonical archive and validation model established. |
+| **C. Apps Script backend drafted** | `doGet`, `getBooks`, and `getShelfTags` created as backend logic. |
+| **D. Engine frontend built** | Search, tags, tabs, cards, theme logic, and deployable UI behavior implemented. |
+| **E. Sheet schema and deployment path defined** | A structured data model now feeds the interface. |
 
-⸻
+---
 
-Practical Summary
+## Practical Summary
 
 The most substantial progress in this project is not that every final component is complete.
 
 It is that the structure needed to build usable software now exists:
 
-* naming hierarchy
-* state logic
-* schemas
-* archive rules
-* working data-fed interface
-* a path from Sheets → Apps Script → UI → deployable web app
+- naming hierarchy
+- state logic
+- schemas
+- archive rules
+- working data-fed interface
+- a path from **Sheets → Apps Script → UI → deployable web app**
 
-⸻
+---
+
+## Current Read
+
+Meaningful progress has been made.  
+The project now has enough structure to test what works, identify what does not, and continue refining the system with clearer feedback.
