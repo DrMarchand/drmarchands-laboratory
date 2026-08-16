@@ -46,7 +46,7 @@ WORKBENCH_CANDIDATES = [
 REQUIRED_MMS_MARKERS = [
     "⚙︎  Nɛuro-Forge Engine™ : 🔐 MMS-768™ ⚛︎ Active 🟢",
     "Author  : J.K. Marchand • Cryptographic Publisher",
-    "Authority: © Design Orchard LLC",
+    "Authority: © Joseph Kyle Marchand",
     "Runtime : 🔬 DrMarchand’s Lab⚛︎ratory™",
     "Archive : 📚 DrMarchand’s ⚛︎ Library™",
     "Safety  : Self-taught. Not a doctor.",
@@ -231,7 +231,7 @@ def render():
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     print(f"⚙︎  Nɛuro-Forge Engine™ : 🔐 MMS-768™ ⚛︎ Active {state['icon']}")
     print("Author  : J.K. Marchand • Cryptographic Publisher")
-    print("Authority: © Design Orchard LLC")
+    print("Authority: © Joseph Kyle Marchand")
     print("Runtime : 🔬 DrMarchand’s Lab⚛︎ratory™")
     print("Archive : 📚 DrMarchand’s ⚛︎ Library™")
     print("Workbench: 🪑 DrMarchand’s ⚛︎ Workbench™")

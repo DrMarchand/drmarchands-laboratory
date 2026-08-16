@@ -97,7 +97,7 @@ def main():
     author = atlas.get("ATLAS_AUTHOR", "J.K. Marchand")
     role = atlas.get("ATLAS_ROLE", "Cryptographic Publisher")
     status = atlas.get("ATLAS_STATUS", "Developer • Graphic Designer")
-    authority = atlas.get("ATLAS_AUTHORITY", "© Design Orchard LLC")
+    authority = atlas.get("ATLAS_AUTHORITY", "© Joseph Kyle Marchand")
     runtime = atlas.get("ATLAS_RUNTIME", "🔬 DrMarchand’s Lab⚛︎ratory™")
     archive = atlas.get("ATLAS_ARCHIVE", "📚 DrMarchand’s ⚛︎ Library™")
     workbench = atlas.get("ATLAS_WORKBENCH", "🪑 DrMarchand’s ⚛︎ Workbench™")
