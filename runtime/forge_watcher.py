@@ -24,31 +24,34 @@ def load_env_file(path: Path):
 
 ATLAS = load_env_file(ATLAS_ENV_FILE)
 
-LIBRARY_REMOTE_HOST = ATLAS.get("ATLAS_VAULT_HOST_REMOTE", "69.137.2.215")
+def configured_paths(*keys):
+    return [
+        Path(ATLAS[key]).expanduser()
+        for key in keys
+        if ATLAS.get(key, "").strip()
+    ]
+
+LIBRARY_REMOTE_HOST = ATLAS.get("ATLAS_VAULT_HOST_REMOTE", "")
 LIBRARY_REMOTE_PORTS = [445, 139]
 
-LIBRARY_CANDIDATES = [
-    Path(ATLAS.get("ATLAS_LIBRARY_PATH", "/Volumes/LAB_8TB/LIB_2TB")),
-    Path(ATLAS.get("ATLAS_LIBRARY_ALIAS", str(Path.home() / "Shared" / "📚 DrMarchand’s ⚛︎ Library™"))),
-    Path("/mnt/LAB_8TB/LIB_2TB"),
-    Path("/media/LAB_8TB/LIB_2TB"),
-    Path("/Volumes/LAB_8TB/LIB_2TB"),
-]
+LIBRARY_CANDIDATES = configured_paths(
+    "ATLAS_LIBRARY_PATH",
+    "ATLAS_LIBRARY_ALIAS",
+)
 
-WORKBENCH_CANDIDATES = [
-    Path(ATLAS.get("ATLAS_WORKBENCH_PATH", "/Volumes/LAB_8TB/WORKBENCH")),
-    Path(ATLAS.get("ATLAS_WORKBENCH_ALIAS", str(Path.home() / "Shared" / "🪑 DrMarchand’s ⚛︎ Workbench™"))),
-    Path("/mnt/LAB_8TB/WORKBENCH"),
-    Path("/media/LAB_8TB/WORKBENCH"),
-    Path("/Volumes/LAB_8TB/WORKBENCH"),
-]
+WORKBENCH_CANDIDATES = configured_paths(
+    "ATLAS_WORKBENCH_PATH",
+    "ATLAS_WORKBENCH_ALIAS",
+)
 
 REQUIRED_MMS_MARKERS = [
-    "⚙︎  Nɛuro-Forge Engine™ : 🔐 MMS-768™ ⚛︎ Active 🟢",
-    "Author  : J.K. Marchand • Cryptographic Publisher",
-    "Authority: © Design Orchard LLC",
-    "Runtime : 🔬 DrMarchand’s Lab⚛︎ratory™",
-    "Archive : 📚 DrMarchand’s ⚛︎ Library™",
+    "DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ : MMS-768 active",
+    "Author: Joseph Kyle Marchand",
+    "Legal authority: Design Orchard LLC",
+    "Copyright owner: Joseph Kyle Marchand",
+    "Publisher: Not established absent a work-specific publication record",
+    "Runtime: 🔬 DrMarchand’s Lab⚛︎ratory™",
+    "Archive: 📚 DrMarchand’s ⚛︎ Library™",
     "Safety  : Self-taught. Not a doctor.",
     "Not an architect. Not licensed.",
 ]
@@ -80,6 +83,8 @@ def first_existing_path(paths):
     return None
 
 def tcp_reachable(host: str, ports, timeout=2):
+    if not host:
+        return False, None
     for port in ports:
         try:
             with socket.create_connection((host, port), timeout=timeout):
@@ -229,11 +234,13 @@ def render():
     state = final_state()
 
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print(f"⚙︎  Nɛuro-Forge Engine™ : 🔐 MMS-768™ ⚛︎ Active {state['icon']}")
-    print("Author  : J.K. Marchand • Cryptographic Publisher")
-    print("Authority: © Design Orchard LLC")
-    print("Runtime : 🔬 DrMarchand’s Lab⚛︎ratory™")
-    print("Archive : 📚 DrMarchand’s ⚛︎ Library™")
+    print(f"DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ : MMS-768 active {state['icon']}")
+    print("Author: Joseph Kyle Marchand")
+    print("Legal authority: Design Orchard LLC")
+    print("Copyright owner: Joseph Kyle Marchand")
+    print("Publisher: Not established absent a work-specific publication record")
+    print("Runtime: 🔬 DrMarchand’s Lab⚛︎ratory™")
+    print("Archive: 📚 DrMarchand’s ⚛︎ Library™")
     print("Workbench: 🪑 DrMarchand’s ⚛︎ Workbench™")
     print(f"WATCHER : {state['icon']} {state['color']}")
     print(f"Message : {state['message']}")

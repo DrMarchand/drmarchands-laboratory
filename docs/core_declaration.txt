@@ -1,15 +1,21 @@
 ❇️ CORE DECLARATION
 
-Authority: © Design Orchard LLC
-Runtime: 🔬 DrMarchand’s Lab⚛︎ratory™
-Engine: ⚙︎ Nɛuro-Forge Engine™
-Archive: 📚 DrMarchand’s ⚛︎ Library™
+Status: Working record; authority-sensitive transitions require authorized-human validation
 
-Workbench: 🪑 DrMarchand’s ⚛︎ Workbench™
-Canvas: 🎨 Creative Canvas™
-Observer: 🪬 Big Brother Dashboard
-Bridge: ☁ Cloud Bridge
+Legal authority: Design Orchard LLC
+Author: Joseph Kyle Marchand
+Copyright owner: Joseph Kyle Marchand
+Publisher: Not established absent a work-specific publication record
 
-Watchdog: Verification Layer
-Lionheart: Orchestration Layer
-Atlas: Configuration Plane
+Operating context: 🔬 DrMarchand’s Lab⚛︎ratory™
+Execution system: DrMarchand’s ⚙︎ Nɛuro-Forge Engine™
+Preservation layer: 📚 DrMarchand’s ⚛︎ Library™
+
+Workbench: execution workspace
+Creative system: DrMarchand’s 🎨 Creative Canvas
+Observer: 🪬 Big Brother
+Bridge: Cloud Bridge
+
+Interpreter: 🦮 Watchdog
+Presentation: DrMarchand’s ∞ OS™ / Lionheart
+Truth resolution: 🗺️ DrMarchand’s ⚛︎ Atlas

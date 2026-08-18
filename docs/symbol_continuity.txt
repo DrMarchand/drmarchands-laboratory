@@ -1,9 +1,15 @@
 ❇️ SYMBOL CONTINUITY DECLARATION
 
-Authority: © Design Orchard LLC
-Runtime: 🔬 DrMarchand’s Lab⚛︎ratory™
-Engine: ⚙︎ Nɛuro-Forge Engine™
-Archive: 📚 DrMarchand’s ⚛︎ Library™
+Status: Working symbolic model; symbols are compressed notation, not evidence by themselves
+
+Legal authority: Design Orchard LLC
+Author: Joseph Kyle Marchand
+Copyright owner: Joseph Kyle Marchand
+Publisher: Not established absent a work-specific publication record
+
+Operating context: 🔬 DrMarchand’s Lab⚛︎ratory™
+Execution system: DrMarchand’s ⚙︎ Nɛuro-Forge Engine™
+Preservation layer: 📚 DrMarchand’s ⚛︎ Library™
 
 ⚛︎ / ⚛️ = atomic structure and active core
 ♊︎ / ♊️ = mirrored duality and paired continuity

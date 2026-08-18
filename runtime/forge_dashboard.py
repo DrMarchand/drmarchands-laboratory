@@ -94,23 +94,25 @@ def main():
     atlas = load_env_file(ATLAS_ENV_FILE)
     watcher = run_watcher()
 
-    author = atlas.get("ATLAS_AUTHOR", "J.K. Marchand")
-    role = atlas.get("ATLAS_ROLE", "Cryptographic Publisher")
+    author = atlas.get("ATLAS_AUTHOR", "Joseph Kyle Marchand")
+    role = atlas.get("ATLAS_ROLE", "System designer")
     status = atlas.get("ATLAS_STATUS", "Developer • Graphic Designer")
-    authority = atlas.get("ATLAS_AUTHORITY", "© Design Orchard LLC")
+    legal_authority = atlas.get("ATLAS_AUTHORITY", "Design Orchard LLC")
+    copyright_owner = atlas.get("ATLAS_COPYRIGHT_OWNER", "Joseph Kyle Marchand")
+    publisher = atlas.get("ATLAS_PUBLISHER", "Not established absent a work-specific publication record")
     runtime = atlas.get("ATLAS_RUNTIME", "🔬 DrMarchand’s Lab⚛︎ratory™")
     archive = atlas.get("ATLAS_ARCHIVE", "📚 DrMarchand’s ⚛︎ Library™")
     workbench = atlas.get("ATLAS_WORKBENCH", "🪑 DrMarchand’s ⚛︎ Workbench™")
     bridge_name = atlas.get("ATLAS_BRIDGE", "☁ Cloud Bridge")
 
-    library_path = atlas.get("ATLAS_LIBRARY_PATH", "/Volumes/LAB_8TB/LIB_2TB")
-    workbench_path = atlas.get("ATLAS_WORKBENCH_PATH", "/Volumes/LAB_8TB/WORKBENCH")
-    remote_host = atlas.get("ATLAS_VAULT_HOST_REMOTE", "69.137.2.215")
+    library_path = atlas.get("ATLAS_LIBRARY_PATH", "not configured")
+    workbench_path = atlas.get("ATLAS_WORKBENCH_PATH", "not configured")
+    remote_host = atlas.get("ATLAS_VAULT_HOST_REMOTE", "not configured")
 
-    icloud_root = atlas.get("ATLAS_ICLOUD_ROOT", "$HOME/iCloudDrive")
-    gdrive_root = atlas.get("ATLAS_GDRIVE_ROOT", "$HOME/GoogleDrive")
-    onedrive_root = atlas.get("ATLAS_ONEDRIVE_ROOT", "$HOME/OneDrive")
-    dropbox_root = atlas.get("ATLAS_DROPBOX_ROOT", "$HOME/Dropbox")
+    icloud_root = atlas.get("ATLAS_ICLOUD_ROOT", "not configured")
+    gdrive_root = atlas.get("ATLAS_GDRIVE_ROOT", "not configured")
+    onedrive_root = atlas.get("ATLAS_ONEDRIVE_ROOT", "not configured")
+    dropbox_root = atlas.get("ATLAS_DROPBOX_ROOT", "not configured")
 
     notice = atlas.get("ATLAS_NOTICE", "Independent professional framework.")
     safety_1 = atlas.get("ATLAS_SAFETY_1", "Self-taught. Not a doctor.")
@@ -216,15 +218,23 @@ def main():
 <body>
   <div class="wrap">
     <div class="hero">
-      <h1>⚙︎ Nɛuro-Forge Engine™ :: Big Brother Dashboard</h1>
+      <h1>DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ :: 🪬 Big Brother Dashboard</h1>
       <p class="sub">{html.escape(author)} • {html.escape(role)} • {html.escape(status)}</p>
       <div class="badge">WATCHDOG {html.escape(state)}</div>
     </div>
 
     <div class="grid">
       <div class="panel">
-        <div class="k">Authority</div>
-        <div class="v">{html.escape(authority)}</div>
+        <div class="k">Legal authority</div>
+        <div class="v">{html.escape(legal_authority)}</div>
+      </div>
+      <div class="panel">
+        <div class="k">Copyright owner</div>
+        <div class="v">{html.escape(copyright_owner)}</div>
+      </div>
+      <div class="panel">
+        <div class="k">Publisher</div>
+        <div class="v">{html.escape(publisher)}</div>
       </div>
       <div class="panel">
         <div class="k">Runtime</div>

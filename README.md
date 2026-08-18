@@ -1,9 +1,11 @@
 # 🔬 DrMarchand’s Lab⚛︎ratory™
 ## Engineering Milestones
 
-**Authority:** © Design Orchard LLC  
-**Owner:** Joseph Kyle Marchand  
-**Engine:** ⚙︎ Nɛuro-Forge Engine™  
+**Legal authority:** Design Orchard LLC  
+**Author:** Joseph Kyle Marchand  
+**Copyright owner:** Joseph Kyle Marchand  
+**Publisher:** Not established absent a work-specific publication record  
+**Engine:** DrMarchand’s DrMarchand’s ⚙︎ Nɛuro-Forge Engine™  
 **Archive:** 📚 DrMarchand’s ⚛︎ Library™
 
 ---
@@ -29,13 +31,13 @@ A major milestone was establishing a stable system structure with named layers a
 
 | State | Layer | Role |
 |:--|:--|:--|
-| `0` | Design Orchard LLC / Orchard | Authority and business layer |
+| `0` | Design Orchard LLC | Legal and operating company |
 | `8` | 🔬 DrMarchand’s Lab⚛︎ratory™ | Active internal environment |
 | `32` | 📚 DrMarchand’s ⚛︎ Library™ | Archive and memory surface |
-| `48` | ⚙︎ Nɛuro-Forge Engine™ | Execution and control logic |
+| `48` | DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ | Execution and control logic |
 
 Additional structure established:
-- **∞ OS™** split into an internal kernel and a public interface
+- **DrMarchand’s ∞ OS™** split into an internal kernel and a public interface
 - **Lionheart** identified as the current active alpha version
 
 > [!TIP]
@@ -119,7 +121,7 @@ It now has a working backend pattern for retrieving and structuring content.
 
 ## 5. Working Web UI Designed for the Engine
 
-The Nɛuro-Forge Engine page includes real interface behavior, not only visual layout.
+The DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ page includes real interface behavior, not only visual layout.
 
 ### Implemented interface features
 
@@ -226,12 +228,12 @@ There has also been meaningful systems progress across related project threads.
 
 ### Advanced areas
 
-- ∞ OS™ folder and root structure
+- DrMarchand’s ∞ OS™ folder and root structure
 - deployable system blueprint
 - Orchard database thinking
 - Partner CRM schema
 - Alpha / Beta / Theta / Delta state-machine translation
-- terminal and shell identity work around the Nɛuro-Forge environment
+- terminal and shell identity work around the DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ environment
 
 These vary in maturity.  
 Some are still blueprint-level, some are shell-level implementation, and some are schema design.  
@@ -243,7 +245,7 @@ They still represent real progress in the project’s supporting infrastructure.
 
 | Milestone | Summary |
 |:--|:--|
-| **A. System architecture defined** | Orchard / Lab / Library / Nɛuro-Forge / ∞ OS™ hierarchy established. |
+| **A. System architecture defined** | Orchard / Lab / Library / DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ / DrMarchand’s ∞ OS™ hierarchy established. |
 | **B. Archive and seal logic defined** | Canonical archive and validation model established. |
 | **C. Apps Script backend drafted** | `doGet`, `getBooks`, and `getShelfTags` created as backend logic. |
 | **D. Engine frontend built** | Search, tags, tabs, cards, theme logic, and deployable UI behavior implemented. |
