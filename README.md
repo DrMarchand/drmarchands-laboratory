@@ -1,269 +1,136 @@
 # 🔬 DrMarchand’s Lab⚛︎ratory™
-## Engineering Milestones
 
 **Legal authority:** Design Orchard LLC  
-**Author:** Joseph Kyle Marchand  
-**Copyright owner:** Joseph Kyle Marchand  
-**Publisher:** Not established absent a work-specific publication record  
-**Engine:** DrMarchand’s DrMarchand’s ⚙︎ Nɛuro-Forge Engine™  
-**Archive:** 📚 DrMarchand’s ⚛︎ Library™
+**Service ecosystem:** 🏝️ Design Orchard℠  
+**Archive:** 📚 DrMarchand’s ⚛︎ Library™  
+**Internal execution system:** ⚙︎ Nɛuro-Forge Engine™
 
 ---
 
-> [!NOTE]
-> This document records practical system progress.
-> Its purpose is to show what has been defined, what has been built, and what appears to work.
+## Purpose
+
+🔬 DrMarchand’s Lab⚛︎ratory™ is the research, development, experimentation, software, and technical implementation environment of Design Orchard LLC.
+
+The Laboratory develops capabilities. Those capabilities may be used internally or, when deliberately supplied to another party, delivered as services through an authorized Design Orchard brand and engagement.
 
 ---
 
-## Overview
+## Trade / Service Boundary
 
-This project has moved from concept exploration into working system design and implementation.
-
-The value here is not in claiming perfection.  
-It is in documenting the current structure, logic, and implementation path.
-
----
-
-## 1. Core System Architecture Defined
-
-A major milestone was establishing a stable system structure with named layers and clearer boundaries.
-
-| State | Layer | Role |
-|:--|:--|:--|
-| `0` | Design Orchard LLC | Legal and operating company |
-| `8` | 🔬 DrMarchand’s Lab⚛︎ratory™ | Active internal environment |
-| `32` | 📚 DrMarchand’s ⚛︎ Library™ | Archive and memory surface |
-| `48` | DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ | Execution and control logic |
-
-Additional structure established:
-- **DrMarchand’s ∞ OS™** split into an internal kernel and a public interface
-- **Lionheart** identified as the current active alpha version
-
-> [!TIP]
-> This matters because implementation becomes easier when names, ownership, and layer boundaries remain stable.
-
----
-
-## 2. Engine Processing Model Established
-
-The project now contains a defined processing model, not only naming or visual identity work.
-
-### Defined model
-
-```txt
-input: x ∈ R
-process: T(x)
-
-paths:
-- Constant
-- Root
-- Radical
-
-convergence targets:
-- 64
-- 786
+```text
+Laboratory capability
+        ↓
+internal trade
+        ├── used inside ecosystem → internal work
+        └── supplied externally   → performed service
+                                      ↓
+                               governed brand
 ```
 
-In practical terms, this is an early algorithmic framework.  
-Some parts are still conceptual, but it is structured enough to inform future code for routing, state handling, scoring, derivation, and validation.
+A trade is the work capability. Supplying that trade to another party is performing a service.
 
-**Why it matters:** provides a consistent logic model for future implementation.
+The service relationship does not make every internal tool, workflow, or component into a public brand.
 
 ---
 
-## 3. Archive and Verification Layer Defined
+## ⚙︎ Nɛuro-Forge Engine™
 
-The project established an archive and verification model through **MARC**.
+⚙︎ Nɛuro-Forge Engine™ is an **internal Laboratory system**.
 
-### Defined rules
+It supports work such as:
 
-```txt
-MARC = archive layer
-786  = sealed / immutable condition
-rule = only sealed assets enter the archive
+- build and compilation;
+- automation;
+- validation and testing;
+- routing and transformation;
+- packaging and deployment;
+- internal trade execution.
+
+The Engine can contribute to a service without itself becoming the public service provider. Customer-facing scope belongs to the appropriate Design Orchard brand, agreement, and record.
+
+Internal implementation details should remain private unless specifically reviewed and authorized for publication.
+
+---
+
+## Laboratory Workflow
+
+```text
+💡 IDEA
+   ↓
+🧪 RESEARCH
+   ↓
+🔬 LABORATORY
+   ↓
+📐 DESIGN
+   ↓
+⚙︎ NƐURO-FORGE ENGINE
+   ↓
+🛠️ INTERNAL TRADES
+   ↓
+🏗️ BUILD
+   ↓
+🧪 TEST
+   ↓
+🔏 VERIFY
+   ↓
+♾️ OPERATE
+   ↓
+👁️ OBSERVE
+   ↓
+📚 PRESERVE
 ```
 
-This introduces the basis for:
-- provenance
-- version legitimacy
-- release gating
-- artifact validation
+When work crosses the external boundary:
 
-> [!IMPORTANT]
-> Many projects produce outputs without defining what counts as canonical.
-> This project now has an early answer to that problem.
-
----
-
-## 4. Apps Script Backend Drafted for the Library / Engine
-
-This is one of the clearest examples of concrete coding progress.
-
-### Implemented backend elements
-
-```javascript
-doGet()
-getBooks(shelf)
-getShelfTags(shelf)
+```text
+🛠️ TRADE → 🤝 SERVICE → 🏷️ GOVERNED BRAND → 📄 AUTHORIZED RECORD
 ```
 
-Additional backend work includes:
-- Google Sheet tab mapping for content retrieval
-- row parsing into structured card objects
-
-This means the project is no longer just storing information in a spreadsheet.  
-It now has a working backend pattern for retrieving and structuring content.
-
-**Why it matters:** moves the project from passive storage toward functional application logic.
-
 ---
 
-## 5. Working Web UI Designed for the Engine
+## Laboratory / Library Boundary
 
-The DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ page includes real interface behavior, not only visual layout.
+The Laboratory is the active development environment. The Library is the preservation and records environment.
 
-### Implemented interface features
-
-- searchable card grid
-- shelf switching between Engine and Protocols
-- tag-chip filters
-- sticky sidebar navigation
-- theme toggle
-- frontend bridge calls to Apps Script
-
-```txt
-Sheets → Apps Script → UI → deployable web app
+```text
+🔬 Laboratory
+   ↓ verified output
+📚 Library
+   ↓
+preserve / index / curate / recall
 ```
 
-This marks the point where the project moved from planning into interactive system behavior.
-
-**Why it matters:** creates a usable interface layer for browsing and interacting with system content.
+Preserved records should not be silently overwritten by later experimental work. Recall creates a working instance for further Laboratory activity.
 
 ---
 
-## 6. Sheet Schema Defined
+## Publication Boundary
 
-The Engine page now depends on a concrete and repeatable schema.
+This public repository documents the Laboratory at an architectural and milestone level.
 
-### Defined schema
+Public documentation should describe approved capabilities, milestones, interfaces, and released artifacts without exposing credentials, secrets, private infrastructure, confidential information, or unnecessary internal Engine implementation details.
 
-```txt
-shelf | title | icon | path | blurb | tags
+```text
+CREATE → TEST → VERIFY → AUTHORIZE → PUBLISH → PRESERVE
 ```
 
-### Defined structure
+---
 
-- required **Engine** tab
-- optional **Protocols** tab
-- deploy path as a Web App
+## Naming Rule
 
-> [!TIP]
-> Schema design makes automation, ingestion, filtering, and future API expansion much easier.
+Marks are applied selectively to governed identities.
+
+- 🔬 DrMarchand’s Lab⚛︎ratory™ — brand
+- 📚 DrMarchand’s ⚛︎ Library™ — brand
+- 🏝️ Design Orchard℠ — service brand
+- ⚙︎ Nɛuro-Forge Engine™ — governed internal system identity
+
+Ordinary operational components, scripts, APIs, folders, repositories, machine identifiers, Workbenches, Toolboxes, Canvases, and Blueprints remain unmarked unless separately promoted and governed.
 
 ---
 
-## 7. Library Expanded into a Multi-Surface System
+## Evidence Rule
 
-The Library has developed beyond a single-page idea into a broader multi-surface structure.
+Documentation is evidence of architecture and intent. It is not, by itself, proof that an implementation is deployed or functioning.
 
-### Supported surfaces
-
-- engine
-- protocols
-- workbench
-- optional `WorkbenchIndex`
-- embedded sheet URLs for read-only and editor modes
-
-This shows the project is being developed as a connected environment rather than a single isolated page.
-
-**Why it matters:** separates browsing, execution, and workbench operations into clearer functional surfaces.
-
----
-
-## 8. Licensing and Provenance Pattern Established
-
-The Engine UI includes structured artifact metadata.
-
-### Defined metadata fields
-
-```txt
-license
-protocol name
-hash
-owner
-timestamp
-storage path for seals
-```
-
-This is the beginning of a manifest system.  
-When connected to file generation or deployment scripts, it can support a more complete artifact registry.
-
-**Why it matters:** prepares the system for traceable outputs and clearer ownership flow.
-
----
-
-## 9. Repeatability Established as a Design Principle
-
-The project is framed around repeatable behavior rather than one-off ideation.
-
-```txt
-inputs are constrained
-structure emerges
-outcomes stabilize
-system remains testable and revisable
-```
-
-**Lionheart** is identified as alpha.  
-The system is treated as testable, revisable, and capable of iteration.
-
-> [!NOTE]
-> Repeatability is one of the clearest indicators that a project is moving from concept exploration into system design.
-
----
-
-## 10. Supporting Systems Work Advanced Across the Project
-
-There has also been meaningful systems progress across related project threads.
-
-### Advanced areas
-
-- DrMarchand’s ∞ OS™ folder and root structure
-- deployable system blueprint
-- Orchard database thinking
-- Partner CRM schema
-- Alpha / Beta / Theta / Delta state-machine translation
-- terminal and shell identity work around the DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ environment
-
-These vary in maturity.  
-Some are still blueprint-level, some are shell-level implementation, and some are schema design.  
-They still represent real progress in the project’s supporting infrastructure.
-
----
-
-## Highest-Value Milestones
-
-| Milestone | Summary |
-|:--|:--|
-| **A. System architecture defined** | Orchard / Lab / Library / DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ / DrMarchand’s ∞ OS™ hierarchy established. |
-| **B. Archive and seal logic defined** | Canonical archive and validation model established. |
-| **C. Apps Script backend drafted** | `doGet`, `getBooks`, and `getShelfTags` created as backend logic. |
-| **D. Engine frontend built** | Search, tags, tabs, cards, theme logic, and deployable UI behavior implemented. |
-| **E. Sheet schema and deployment path defined** | A structured data model now feeds the interface. |
-
----
-
-## Practical Summary
-
-The most substantial progress in this project is not that every final component is complete.
-
-It is that the structure needed to build usable software now exists:
-
-- naming hierarchy
-- state logic
-- schemas
-- archive rules
-- working data-fed interface
-- a path from **Sheets → Apps Script → UI → deployable web app**
-
----
+Implementation claims should be supported by reproducible runtime evidence, tests, artifacts, logs, or other appropriate verification records.
