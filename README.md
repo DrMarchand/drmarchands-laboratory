@@ -1,136 +1,63 @@
-# 🔬 DrMarchand’s Lab⚛︎ratory™
+# DrMarchand’s Laboratory
 
-**Legal authority:** Design Orchard LLC  
-**Service ecosystem:** 🏝️ Design Orchard℠  
-**Archive:** 📚 DrMarchand’s ⚛︎ Library™  
-**Internal execution system:** ⚙︎ Nɛuro-Forge Engine™
+**Operated by:** Design Orchard LLC
 
----
+DrMarchand’s Laboratory is an independent research and development environment for software, technical experimentation, automation, security, creative tooling, and system architecture.
 
 ## Purpose
 
-🔬 DrMarchand’s Lab⚛︎ratory™ is the research, development, experimentation, software, and technical implementation environment of Design Orchard LLC.
+The Laboratory develops and tests capabilities through small, practical projects. Work may remain experimental, become useful internal tooling, or contribute to an intentionally released service or project.
 
-The Laboratory develops capabilities. Those capabilities may be used internally or, when deliberately supplied to another party, delivered as services through an authorized Design Orchard brand and engagement.
+A useful internal capability is not automatically a public product.
 
----
+## Internal execution
 
-## Trade / Service Boundary
+The Laboratory maintains an internal execution framework used to organize, build, test, validate, route, package, and automate development workflows.
 
-```text
-Laboratory capability
-        ↓
-internal trade
-        ├── used inside ecosystem → internal work
-        └── supplied externally   → performed service
-                                      ↓
-                               governed brand
-```
+Detailed internal implementation is kept separate from public descriptions unless there is a practical reason to publish it.
 
-A trade is the work capability. Supplying that trade to another party is performing a service.
+Third-party tools, including AI tools where appropriate, may participate in research and development. Their use does not make the Laboratory or its internal execution framework an AI product.
 
-The service relationship does not make every internal tool, workflow, or component into a public brand.
-
----
-
-## ⚙︎ Nɛuro-Forge Engine™
-
-⚙︎ Nɛuro-Forge Engine™ is an **internal Laboratory system**.
-
-It supports work such as:
-
-- build and compilation;
-- automation;
-- validation and testing;
-- routing and transformation;
-- packaging and deployment;
-- internal trade execution.
-
-The Engine can contribute to a service without itself becoming the public service provider. Customer-facing scope belongs to the appropriate Design Orchard brand, agreement, and record.
-
-Internal implementation details should remain private unless specifically reviewed and authorized for publication.
-
----
-
-## Laboratory Workflow
+## Basic workflow
 
 ```text
-💡 IDEA
-   ↓
-🧪 RESEARCH
-   ↓
-🔬 LABORATORY
-   ↓
-📐 DESIGN
-   ↓
-⚙︎ NƐURO-FORGE ENGINE
-   ↓
-🛠️ INTERNAL TRADES
-   ↓
-🏗️ BUILD
-   ↓
-🧪 TEST
-   ↓
-🔏 VERIFY
-   ↓
-♾️ OPERATE
-   ↓
-👁️ OBSERVE
-   ↓
-📚 PRESERVE
+IDEA
+  ↓
+RESEARCH
+  ↓
+LABORATORY
+  ↓
+DESIGN
+  ↓
+BUILD
+  ↓
+TEST
+  ↓
+VERIFY
+  ↓
+OPERATE
+  ↓
+OBSERVE
+  ↓
+PRESERVE
 ```
 
-When work crosses the external boundary:
+## Laboratory / Library boundary
 
-```text
-🛠️ TRADE → 🤝 SERVICE → 🏷️ GOVERNED BRAND → 📄 AUTHORIZED RECORD
-```
+The Laboratory is an active development environment. DrMarchand’s Library is used for preservation, records, curation, and recall.
 
----
+A preserved record should not be silently overwritten by later experimental work. Recall creates a working instance for further activity.
 
-## Laboratory / Library Boundary
+## Publication boundary
 
-The Laboratory is the active development environment. The Library is the preservation and records environment.
+This public repository documents the Laboratory at an architectural and milestone level. Public documentation should describe approved capabilities, interfaces, projects, and released artifacts without exposing credentials, secrets, confidential information, private infrastructure, or unnecessary implementation details.
 
-```text
-🔬 Laboratory
-   ↓ verified output
-📚 Library
-   ↓
-preserve / index / curate / recall
-```
+Documentation describes architecture and intent. Runtime claims should be supported by reproducible evidence.
 
-Preserved records should not be silently overwritten by later experimental work. Recall creates a working instance for further Laboratory activity.
+## Naming rule
 
----
+Until further notice, `™` and `℠` are reserved only for functional folder names.
 
-## Publication Boundary
+Public prose and ordinary references use unmarked names. A marked folder and the otherwise identical unmarked folder represent the same functional namespace; after contents, permissions, identity, and references are reconciled, the unmarked folder is the preferred compacted home.
 
-This public repository documents the Laboratory at an architectural and milestone level.
-
-Public documentation should describe approved capabilities, milestones, interfaces, and released artifacts without exposing credentials, secrets, private infrastructure, confidential information, or unnecessary internal Engine implementation details.
-
-```text
-CREATE → TEST → VERIFY → AUTHORIZE → PUBLISH → PRESERVE
-```
-
----
-
-## Naming Rule
-
-Marks are applied selectively to governed identities.
-
-- 🔬 DrMarchand’s Lab⚛︎ratory™ — brand
-- 📚 DrMarchand’s ⚛︎ Library™ — brand
-- 🏝️ Design Orchard℠ — service brand
-- ⚙︎ Nɛuro-Forge Engine™ — governed internal system identity
-
-Ordinary operational components, scripts, APIs, folders, repositories, machine identifiers, Workbenches, Toolboxes, Canvases, and Blueprints remain unmarked unless separately promoted and governed.
-
----
-
-## Evidence Rule
-
-Documentation is evidence of architecture and intent. It is not, by itself, proof that an implementation is deployed or functioning.
-
-Implementation claims should be supported by reproducible runtime evidence, tests, artifacts, logs, or other appropriate verification records.
+Machine identifiers and historical evidence are preserved as observed rather than silently renamed.
